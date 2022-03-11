@@ -79,59 +79,73 @@
 
             <section>
                 <div>
-                    <H1 class="fs-2 fw-bold bg-secondary bg-gradient text-center mt-3">Question & Answer Section</H1>
+                    <H1 class="fs-2 fw-bold bg-secondary bg-gradient text-center mt-3 p-3 rounded">Question & Answer Section</H1>
                 </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          How does javascript Work ?
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>javascript</strong> 
-                          <ul>
-                            <li>JavaScript is called a Client-side Scripting and single-threaded programming Language.</li>
-                            <li>The JavaScript engine executes a script from the top of the file and works its way down. It creates the execution contexts, pushes, and pops functions onto and off the call stack in the execution phase.</li>
-                            <li> It is an interpreted language, which means it does not need a compiler to translate its code like C or C++. JavaScript code runs directly in a web browser.</li>
-                            <li>Here's how it works. HTML tags create objects, JavaScript lets you manipulate those objects. For example, you use the HTML and tags to create a Web page, or document. As shown in Table 1, after that document is created, you can interact with it by using JavaScript.</li>
-                            <li>Nowadays, most of the modern web browsers support JavaScript and have their JavaScript engines. For example, Google Chrome has its own JavaScript engine called V8.</li>
-                          </ul>
-                        </div>
-                      </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        How does javascript Work ?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <strong>javascript</strong> 
+                        <ul>
+                          <li>JavaScript is called a Client-side Scripting and single-threaded programming Language.</li>
+                          <li>The JavaScript engine executes a script from the top of the file and works its way down. It creates the execution contexts, pushes, and pops functions onto and off the call stack in the execution phase.</li>
+                          <li> It is an interpreted language, which means it does not need a compiler to translate its code like C or C++. JavaScript code runs directly in a web browser.</li>
+                          <li>Here's how it works. HTML tags create objects, JavaScript lets you manipulate those objects. For example, you use the HTML and tags to create a Web page, or document. As shown in Table 1, after that document is created, you can interact with it by using JavaScript.</li>
+                          <li>Nowadays, most of the modern web browsers support JavaScript and have their JavaScript engines. For example, Google Chrome has its own JavaScript engine called V8.</li>
+                        </ul></div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                          What does Event Loop Do?
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> 
-                          <ul>
-                            <li>The event loop is the secret by which JavaScript gives us an illusion of being multithreaded even though it is single-threaded.</li>
-                            <li>The Event Loop has one simple job to monitor the Call Stack and the Callback Queue.</li>
-                            <li>JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.</li>
-                            <li> If a user clicks on the JButton, a button click event is triggered, the event will be created, and it will be sent to the relevant event listener (in this case, the ActionListener).</li>
-                          </ul>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        What does Event Loop Do?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"> 
+                        <strong>Event Loop : </strong> 
+                        <ul>
+                          <li>The event loop is the secret by which JavaScript gives us an illusion of being multithreaded even though it is single-threaded.</li>
+                          <li>The Event Loop has one simple job to monitor the Call Stack and the Callback Queue.</li>
+                          <li>JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.</li>
+                          <li> If a user clicks on the JButton, a button click event is triggered, the event will be created, and it will be sent to the relevant event listener (in this case, the ActionListener).</li>
+                        </ul></div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                          Defarent with local storage to season storage ?
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed fs-3 fw-bold " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Difference Between Local Storage And Season Storage ?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <strong>Local Storage :</strong>
+                        <ul>
+                         <li>stores data with no expiration date</li>
+                         <li>storage limit is about 5MB</li>
+                         <li>data is never transferred to the server</li>
+                         <li>plaintext, hence not secure by design</li>
+                         <li>limited to string data, hence need to be serialized</li>
+                         <li>can only be read on client-side</li>
+                        </ul>
+                        <strong>Season Storage :</strong>
+                        <ul>
+                          <li>stores data only for a session, meaning that the data is stored until the browser (or tab) is closed</li>
+                          <li>data is never transferred to the server</li>
+                          <li>can only be read on client-side</li>
+                          <li>storage limit is about 5-10MB</li>
+                          <li>opening multiple tabs/windows with the same URL creates sessionStorage for each tab/window</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                </div>
             </section>
         </main>
         <footer></footer>
